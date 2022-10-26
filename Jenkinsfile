@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		sayHello('MAIN')
+		sayHello("{$env.BRANCH_NAME}")
             }
         }
         stage('Test') {
