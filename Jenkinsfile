@@ -1,4 +1,4 @@
-@Library('tpac-pkg-library@main') _
+@Library("tpac-pkg-library@${env.BRANCH_NAME}") _
 
 pipeline {
     agent any
@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		sayHello('AAAAAA')
+		sayHello('DEVVV')
             }
         }
         stage('Test') {
