@@ -1,4 +1,4 @@
-@Library("tpac-pkg-library@$BRANCH_NAME") _
+@Library("tpac-pkg-library@${BRANCH_NAME}") _
 
 pipeline {
     agent any
