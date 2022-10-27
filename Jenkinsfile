@@ -4,4 +4,4 @@ pkgdefPipeline {
     branch = "DDDDDD"
     node = "master"
     prodtype = "PRODDD"
-    )
+}
