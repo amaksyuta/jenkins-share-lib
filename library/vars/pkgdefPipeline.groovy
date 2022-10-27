@@ -1,5 +1,9 @@
-def call(Map pipelineParams) 
-{
+def call(body) {
+    // evaluate the body block, and collect configuration into the object
+    def pipelineParams= [:]
+    body.resolveStrategy = Closure.DELEGATE_FIRST
+    body.delegate = pipelineParams
+    body()
 
 pipeline {
     agent any
@@ -14,11 +18,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                sayHello(pipelineParams.node)
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                sayHello(pipelineParams.prodtype)
             }
         }
     }

@@ -1,3 +1,7 @@
 @Library("tpac-pkg-library@main") _
 
-pkgdefPipeline(branch: "main")
+pkgdefPipeline {
+    branch = "DDDDDD"
+    node = "master"
+    prodtype = "PRODDD"
+    )
