@@ -3,5 +3,5 @@
 pkgdefPipeline {
     branch = "main"
     node = "master"
-    prodtype = "PRO"
+    prodtype = "PROOO"
 }
