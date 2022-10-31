@@ -1,7 +1,7 @@
 @Library("tpac-pkg-library@main") _
 
 pkgdefPipeline {
-    branch = "dev"
+    branch = "main"
     node = "master"
     prodtype = "DEV"
 }
