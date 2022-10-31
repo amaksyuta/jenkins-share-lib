@@ -3,5 +3,5 @@
 pkgdefPipeline {
     branch = "DDWWW"
     node = "master"
-    prodtype = "PROSS"
+    prodtype = "PRO"
 }
