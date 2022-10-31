@@ -1,24 +1,7 @@
-@Library("tpac-pkg-library@dev") _
+@Library("tpac-pkg-library@main") _
 
-pipeline {
-    agent any
-
-    stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-		sayHello('DEVVV')
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-    }
+pkgdefPipeline {
+    branch = "dev"
+    node = "master"
+    prodtype = "PRO"
 }
