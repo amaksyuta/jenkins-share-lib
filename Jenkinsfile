@@ -1,7 +1,7 @@
 @Library("tpac-pkg-library@main") _
 
 pkgdefPipeline {
-    branch = "DDWWW"
+    branch = "main"
     node = "master"
     prodtype = "PRO"
 }
